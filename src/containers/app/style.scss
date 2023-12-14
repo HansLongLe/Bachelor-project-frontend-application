@@ -1,0 +1,20 @@
+@import "~@kamstrup/kfl/lib/components/theme/colors";
+
+.kfl-layout-content-container {
+    .MuiBox-root{
+        &::-webkit-scrollbar {
+            width: 8px;
+        }
+        &::-webkit-scrollbar-track {
+            background: $grey-25;
+            border-radius: 8px;
+        }
+        &::-webkit-scrollbar-thumb {
+            background-color: $teal-50;
+            border-radius: 8px;
+            &:hover {
+                background-color: $teal-75;
+            }
+        }
+    }
+}

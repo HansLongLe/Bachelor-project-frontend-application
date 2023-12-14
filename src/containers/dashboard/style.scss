@@ -1,0 +1,43 @@
+@import "~@kamstrup/kfl/lib/components/theme/colors";
+
+.react-resizable-handle-se{
+    bottom: 16px !important;
+    right: 16px !important;
+}
+
+.table-overview{
+    & .calculation-done-count{
+        display: flex;
+        align-items: center;
+        color: $success-50;
+        flex-direction: column;
+        & .calculation-count{
+            &-top{
+                display: flex;
+                align-items: center;
+            }
+            &-bottom{
+            font-size: small;
+            font-weight: 400;
+            margin-top: 8px;
+            }
+        }
+    }
+    & .calculation-missing-count{
+        display: flex;
+        align-items: center;
+        color: $error-50;
+        flex-direction: column;
+        & .calculation-count{
+            &-top{
+                display: flex;
+                align-items: center;
+            }
+            &-bottom{
+            font-size: small;
+            font-weight: 400;
+            margin-top: 8px;
+            }
+        }
+    }
+}

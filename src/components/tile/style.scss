@@ -1,0 +1,19 @@
+@import "~@kamstrup/kfl/lib/components/theme/colors";
+
+.table-overview{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    margin-bottom: 16px;
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+.tile-controls{
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    top: 16px;
+    right: 16px;
+}
