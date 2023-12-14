@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>SupportLandingPage</id>
+    <version>0.1</version>
+    <authors>Kamstrup A/S</authors>
+    <owners>Kamstrup A/S</owners>
+    <projectUrl>http://kamstrup.com</projectUrl>
+    <iconUrl>https://www.kamstrup.com/SCom/graphics/favicon/favicon-16x16.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Support Landing Page Application</description>
+    <releaseNotes>The Support Landing Page frontend application</releaseNotes>
+    <copyright>Copyright Kamstrup A/S 2018</copyright>
+    <dependencies>
+    </dependencies>
+  </metadata>
+  <files>
+	<file src="build\**" target="." />
+    <file src="web.config" target="." />
+  </files>
+</package>

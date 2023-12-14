@@ -1,0 +1,19 @@
+variables:
+  ARTIFACT_VERSION: 1.1.0.$CI_PIPELINE_IID
+  INCLUDE_FILES_PATTERN: "web.config,*.js,index.html"
+
+include:
+  - project: "kamstrup/pipelinetemplates/continous-deployment/frontend-msdeploy"
+    ref: "v1.0.2"
+    file: "pipeline.yml"
+
+.deploy:
+  tags:
+    - windows-docker-1809
+    - onprem
+
+yarn build:
+  tags:
+    - onprem
+    - linux
+    - docker
